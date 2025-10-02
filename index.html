@@ -12,17 +12,43 @@
 <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
     </head>
     <body>
-<div id="container" style="width: 800px; background-color:lavender; height: 600px; margin: 0 auto;">
+<div id="container" style="width: 800px; background-color:lavender; height: 850px; margin: 0 auto;">
 <header><h1>Zoey's Art Store</h1></header>
 <nav><p></p></nav>
 <section>
 <article class="left"></article>
 <article class="right"></article>
 </section>
+<h2>Fill out the following form to buy your artwork.</h2>
+<h3>Name for the order</h3>
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value=""><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value=""><br><br>
+  <input type="submit" value="Submit" id="submitbtn">
+  <h3>Choose the medium you would ike for your piece.</h3>
+<form>
+  <input type="radio" id="html" name="fav_language" value="HTML">
+  <label for="Digital">Digital</label><br>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="Physical">Physical</label><br>
+  <h3>Choose what result you would like. Be aware prices may fluctuate depending on how many you choose, and which ones you choose.</h3>
+  <form>
+  <input type="checkbox" id="Option1" name="Option1" value="Sketch">
+  <label for="Option1"> I want a sketch.</label><br>
+  <input type="checkbox" id="Option2" name="Option2" value="Colored and Lined">
+  <label for="Option2"> I want a fully lined and colored piece.</label><br>
+  <input type="checkbox" id="Option3" name="Option3" value="Rendered">
+  <label for="Option3"> I want a fully rendered piece.</label>
+</form>
+<h3>And now a word from our sponsor!</h3>
+<audio controls>
+  <source src="assets/meow.mp3" type="audio/mp3">
+  <source src="meow.mp3" type="audio/mpeg">
+</audio>
 <main></main>
 <footer></footer>
-
-
 </div>
     </body>
 </html>
