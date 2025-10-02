@@ -12,12 +12,26 @@
 <link href="https://fonts.googleapis.com/css2?family=Limelight&display=swap" rel="stylesheet">
     </head>
     <body>
-<div id="container" style="width: 800px; background-color:lavender; height: 850px; margin: 0 auto;">
-<header><h1>Zoey's Art Store</h1></header>
+<div id="container" style="width: 800px; background-color:lavender; height: 1100px; margin: 0 auto;">
+<header><h1 style="font-family: Limelight;">Zoey's Art Store</h1></header>
 <nav><p></p></nav>
 <section>
-<article class="left"></article>
-<article class="right"></article>
+<article class="left"><h2>If you click on the tablet, you will be taken to a page to learn about digital art. However, if you click on the pen, you will learn about drawing tablets.</h2><canvas id="myCanvas" width="270" height="100">
+</canvas>
+
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "15px Arial";
+ctx.strokeText("Thank You For Considering Zoey's Art",10,50);
+</script></article>
+<article class="right">
+    <img src="assets/Tab.jpg" alt="Workplace" usemap="#workmap" width="250px" height="250px">
+<map name="workmap">
+  <area shape="poly" coords="14.15,87.23,102.86,90.11,170.95,94.42,191.57,131.43,161.24,150.33,156.68,158.95,167.94,156.31,197.14,138.71,217.73,183.58,141.46,183.32,54.72,184.72,14.15,87.23" alt="Tablet" href="https://www.adobe.com/uk/creativecloud/illustration/discover/digital-art.html">
+  <area shape="poly" coords="158.44,157.54,164.77,151.03,205.77,125.17,241.83,102.29,245.53,106.52,214.56,126.93,167.94,156.13,158.44,157.54" alt="Pen" href="https://www.huion.com/b2b/news/graphic_tablet/What_is_a_graphic_tablet">
+</map>
+</article>
 </section>
 <h2>Fill out the following form to buy your artwork.</h2>
 <h3>Name for the order</h3>
@@ -47,6 +61,10 @@
   <source src="assets/meow.mp3" type="audio/mp3">
   <source src="meow.mp3" type="audio/mpeg">
 </audio>
+<svg width="150" height="100">
+  <polygon points="50,5 20,99 95,39 5,39 80,99"
+  style="fill:rgb(169, 243, 254);stroke:rgb(144, 103, 159);stroke-width:5;fill-rule:evenodd;"/>
+</svg>
 <main></main>
 <footer></footer>
 </div>
